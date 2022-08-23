@@ -3,6 +3,6 @@ document.getElementById('btn1').addEventListener('click', function(){
     disk.classList.add('img')
 
     const song = document.getElementById('song');
-    song.src = './audios/Amar_Sonar_Bangla(sumirbd.mobi).mp3';
+    song.src = './audios/amarVaierRokteRangano.mp3';
     audio.load();
 })
