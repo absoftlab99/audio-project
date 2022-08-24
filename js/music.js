@@ -1,6 +1,3 @@
-document.getElementById('stop').addEventListener('click', function(){
-    window.location.reload(true);
-})
 
 function fullcall(id, disksrc, songsrc){
     document.getElementById(id).addEventListener('click', function(){
@@ -9,11 +6,13 @@ function fullcall(id, disksrc, songsrc){
         disk.src = disksrc;
 
         const songs = document.getElementById(id);
-        songs.classList.add('bg-custome')
-    
+        const newClass = songs.classList;
+        newClass.add('bg-custome');
+
         const song = document.getElementById('song');
         song.src = songsrc;
-        audio.load();
+        song.load();
+
     })
 }
 
@@ -37,3 +36,15 @@ fullcall('song17', './images/disk17.svg', './audios/audio17.mp3');
 fullcall('song18', './images/disk18.svg', './audios/audio18.mp3');
 fullcall('song19', './images/disk19.svg', './audios/audio19.mp3');
 fullcall('song20', './images/disk20.svg', './audios/audio20.mp3');
+
+document.getElementById('stop').addEventListener('click', function(){
+    const disk = document.getElementById('img');
+    disk.classList.remove('img');
+    disk.src = './images/disk0.svg';
+    const stop = document.getElementById('song');
+    stop.src = "";
+    const allsongs = document.getElementsByClassName('remove');
+    allsongs.classList.remove('bg-custome');    
+})
+
+

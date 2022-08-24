@@ -13,7 +13,7 @@
     font-family: 'Hind Siliguri', sans-serif;
 }
 .img {
-    animation: rotate 6s linear  infinite;
+    animation: rotate 10s linear  infinite;
 }
 
 @keyframes rotate {
@@ -32,4 +32,15 @@ to { transform: rotate(360deg); }
 
 .bg-custome{
     background-color: red;
+}
+.bg-customes{
+    background-color: none;
+}
+
+/* moblie section */
+
+.bg-svg{
+    background-image: url("./images/m-bg.svg");
+    background-size: cover;
+    height: 759px; 
 }

@@ -15,7 +15,7 @@
     </head>
     <body>
 
-        <main class="d-flex flex-column justify-content-center items-align-center pt-4">
+        <main class="d-flex flex-column justify-content-center items-align-center pt-4 d-none d-md-block">
             <section class="container rounded-5 border border-light" id="main">
                 <div class="row">
                     <div class="col-7 px-3 pt-5 ps-3">
@@ -24,7 +24,7 @@
                             <!-- first line of audio picker -->
                             <div class="col-4 gx-5">
                                 <!-- audio picker-1 -->
-                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song1">
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1 remove" id="song1">
                                     <div class="col-3 p-0">
                                         <img id="elips1" class="elips border rounded-5" height="40" width="40" src="./images/elips1.svg" alt="">
                                     </div>
@@ -232,7 +232,7 @@
                                 </div>
                                 <div class="row pt-2 m-auto">
                                     <div class="col-12">
-                                        <button title="stop-btn" class="btn btn-outline-danger rounded-0 w-100"><i class="fa-solid fa-circle-stop" id="stop"></i> Stop</button>
+                                        <button id="stop" title="stop-btn" class="btn btn-outline-danger rounded-0 w-100"><i class="fa-solid fa-circle-stop"></i> Stop</button>
                                     </div>
                                 </div>
                             </div>
@@ -253,13 +253,50 @@
                         </div>
                     </div>
                 </div>
+                <div class="row d-flex flex-row m-auto gap-0 pt-2 ps-2">
+                    <div class="col-7">
+                        <a title="facebook" href="https://facebook.com/absoftlab99"><i class="fa-brands fa-square-facebook text-warning display-6"></i></a>
+                        <a title="github" href="https://github.com/absoftlab99"><i class="fa-brands fa-square-github text-warning display-6"></i></a>
+                        <a title="linkedin" href="https://www.linkedin.com/in/absoftlab99/"><i class="fa-brands fa-linkedin text-warning display-6"></i></a>
+                    </div>
+                    <div class="col-5 pt-2">
+                        <h4 class="text-warning ff-shiliguri">ডিজাইন এন্ড ডেভেলোপ: আব্দুল্লাহ আল মাহমুদ</h4>
+                    </div>
+                </div>
             </section>
         </main>
+
+
+        <!-- mobile site -->
+        <main class="d-block d-md-none d-lg-none bg-svg container-fluid d-flex flex-column justify-content-center w-150">
+            <h4 class="text-center display-6 text-warning fw-bolder ff-shiliguri pt-3">বিবিসি মনোনীত সর্বকালের সর্বশ্রেষ্ঠ বাংলা গান [২০টি]</h4>
+            
+            <div class="row pt-3">
+                <img id="disk" class="items-align-center" height="300px" width="300px" src="./images/disk0.svg" alt="">
+            </div>
+            <button id="stop-m" title="stop-btn" class="m-auto btn btn-lg btn-outline-danger rounded-0 w-50"><i class="fa-solid fa-circle-stop"></i> Stop</button>
+            <div class="row m-auto">
+                <div class="text-light m-auto opacity-50">
+                    <audio id="song-m" controls="controls" autoplay="autoplay" src="">Your browser does not support the audio format.</audio>
+                </div>
+            </div>
+            <p class="display-6 text-center fw-bolder text-warning ff-shiliguri">আপনি শুনছেন <span id="number">0</span> নম্বর গাণ</p>
+            <div class="row m-auto">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button id="pre" type="button" class="btn btn-lg btn-outline-info"><i class="fa-solid fa-backward"></i> Prev</button>
+                    <button id="next" type="button" class="btn btn-lg btn-outline-info">Next <i class="fa-solid fa-forward"></i></button>
+                </div>
+            </div>
+        
+        </main>
+
+
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
             crossorigin="anonymous"></script>
         <script src="./js/music.js"></script>
+        <script src="./js/m.js"></script>
     </body>
 </html>
