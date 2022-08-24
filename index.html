@@ -14,14 +14,23 @@
     <main class="d-flex flex-column justify-content-center items-align-center pt-4">
         <section class="container rounded-5 border border-light  ">
             <div class="row">
-                <div class="col-4 px-3 pt-2">
+                <div class="col-4 px-3 pt-4 ps-5">
                     <h4 class="text-center text-dark fw-bolder ff-manrope ">My Musics List</h4>
-                    <button id="btn1" title="music" class="btn btn-outline-dark btn-lg w-100 ff-manrope mb-2 border rounded-3"><i class="fa-solid fa-circle-play fs-4"></i>  Amar Sonar Bangla</button>
+
+                    <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-2 pointer" id="btn1">
+                        <div class="col-3 p-0">
+                            <img id="elips" class="border rounded-5" height="50" width="50" src="./images/21February.svg" alt="">
+                        </div>
+                        <div class="col-9 p-0">
+                            <h6 class="ff-manrope fw-bolder text-light">Amar Vaiyer Rokte...</h6>
+                            <p class="ff-manrope name text-light mb-0">by Abdul Gaffar Choudhury</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-8 d-flex flex-column justify-content-center">
+                <div class="col-8 d-flex flex-column justify-content-center pt-5">
                     <div class="m-auto d-flex flex-column justify-content-center">
                         <img id="img" height="350px" width="350px" class="" src="./images/disk.svg" alt="">
-                        <div class="text-light m-auto mt-4"><audio id="song" controls autoplay src="">Your browser does not support the audio format.</audio></div>
+                        <div class="text-light m-auto mt-4 opacity-50"><audio id="song" controls autoplay src="">Your browser does not support the audio format.</audio></div>
                     </div>
                 </div>
             </div>

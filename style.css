@@ -18,3 +18,13 @@
 from { transform: rotate(0deg); }
 to { transform: rotate(360deg); }
 }
+
+.name{
+    font-size:12px;
+}
+.bg-grad{
+    background: linear-gradient(90deg, rgba(81, 147, 150, 0.704) 0%, rgba(25,0,255,0) 100%);
+}
+.pointer{
+    cursor: pointer;
+}
