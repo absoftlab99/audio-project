@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
 .container{
     background-image: url("./images/bg.svg");
     background-size: cover;
     height: 550px;
-    width: 850px;
     -webkit-box-shadow: 0px 3px 21px 4px #000000; 
     box-shadow: 0px 3px 21px 4px #000000;   
 }
-.ff-manrope{
-    font-family: 'Manrope', sans-serif;
+.fs-custome{
+    font-size: 12px;
+}
+.ff-shiliguri{
+    font-family: 'Hind Siliguri', sans-serif;
 }
 .img {
     animation: rotate 6s linear  infinite;
@@ -18,13 +20,12 @@
 from { transform: rotate(0deg); }
 to { transform: rotate(360deg); }
 }
-
-.name{
-    font-size:12px;
-}
 .bg-grad{
     background: linear-gradient(90deg, rgba(81, 147, 150, 0.704) 0%, rgba(25,0,255,0) 100%);
 }
 .pointer{
     cursor: pointer;
+}
+#main{
+    overflow: hidden;
 }

@@ -1,43 +1,265 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My First Music Player with JS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <!-- fontawesome cnd -->
-    <script src="https://kit.fontawesome.com/7abbe36ff3.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-    <main class="d-flex flex-column justify-content-center items-align-center pt-4">
-        <section class="container rounded-5 border border-light  ">
-            <div class="row">
-                <div class="col-4 px-3 pt-4 ps-5">
-                    <h4 class="text-center text-dark fw-bolder ff-manrope ">My Musics List</h4>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>বিবিসি মনোনীত সর্বকালের সর্বশ্রেষ্ঠ বাংলা গান [২০টি]</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <!-- fontawesome cnd -->
+        <script src="https://kit.fontawesome.com/7abbe36ff3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
 
-                    <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-2 pointer" id="btn1">
-                        <div class="col-3 p-0">
-                            <img id="elips" class="border rounded-5" height="50" width="50" src="./images/21February.svg" alt="">
+        <main class="d-flex flex-column justify-content-center items-align-center pt-4">
+            <section class="container rounded-5 border border-light" id="main">
+                <div class="row">
+                    <div class="col-7 px-3 pt-5 ps-3">
+                        <h4 class="text-center text-warning fw-bolder ff-shiliguri">বিবিসি মনোনীত সর্বকালের সর্বশ্রেষ্ঠ বাংলা গান [২০টি]</h4>
+                        <div id="pickers" class="row container-fluid p-0 m-0 pt-3">
+                            <!-- first line of audio picker -->
+                            <div class="col-4">
+                                <!-- audio picker-1 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song1">
+                                    <div class="col-3 p-0">
+                                        <img id="elips1" class="elips border rounded-5" height="40" width="40" src="./images/elips1.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">আমার সোনার বাংলা...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">রবিন্দ্রনাথ ঠাকুর</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-2 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song2">
+                                    <div class="col-3 p-0">
+                                        <img id="elips2" class="elips border rounded-5" height="40" width="40" src="./images/elips2.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">মানুষ মানুষের জন্য...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">ভূপেন হাজারিকা</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-3 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song3">
+                                    <div class="col-3 p-0">
+                                        <img id="elips3" class="elips border rounded-5" height="40" width="40" src="./images/elips3.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">আমার ভাইয়ের রক্তে রাঙানো...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">আব্দুল গাফফার চৌধুরী</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-4 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song4">
+                                    <div class="col-3 p-0">
+                                        <img id="elips4" class="elips border rounded-5" height="40" width="40" src="./images/elips4.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">কফি হাউসের সেই আড্ডাটা...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">গৌরীপ্রসন্ন মজুমদার</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-5 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song5">
+                                    <div class="col-3 p-0">
+                                        <img id="elips5" class="elips border rounded-5" height="40" width="40" src="./images/elips5.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">এক সাগর রক্তের বিনিময়ে...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">গোবিন্দ হালদার</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-6 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song6">
+                                    <div class="col-3 p-0">
+                                        <img id="elips6" class="elips border rounded-5" height="40" width="40" src="./images/elips6.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">এক আমি বাংলায় গান গাই...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">প্রতুল মুখোপাধ্যায়</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-7 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song7">
+                                    <div class="col-3 p-0">
+                                        <img id="elips7" class="elips border rounded-5" height="40" width="40" src="./images/elips7.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">এক মোরা একটি ফুলকে বাঁচাবো...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">গোবিন্দ হালদার</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Second line of audio picker -->
+                            <div class="col-4">
+                                <!-- audio picker-8 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song8">
+                                    <div class="col-3 p-0">
+                                        <img id="elips8" class="elips border rounded-5" height="40" width="40" src="./images/elips8.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">তুমি আজ কতদূরে...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">প্রণব রায়</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-9 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song9">
+                                    <div class="col-3 p-0">
+                                        <img id="elips9" class="elips border rounded-5" height="40" width="40" src="./images/elips9.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">এক নদী রক্ত পেরিয়ে...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">খান আতাউর রহমান</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-10 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song10">
+                                    <div class="col-3 p-0">
+                                        <img id="elips10" class="elips border rounded-5" height="40" width="40" src="./images/elips10.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">ধন ধান্য পুষ্প ভরা...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">দ্বিজেন্দ্রলাল রায়</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-11 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song11">
+                                    <div class="col-3 p-0">
+                                        <img id="elips11" class="elips border rounded-5" height="40" width="40" src="./images/elips11.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">মুছে যাওয়া দিনগুলি...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">গৌরীপ্রসন্ন মজুমদার</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-12 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song12">
+                                    <div class="col-3 p-0">
+                                        <img id="elips12" class="elips border rounded-5" height="40" width="40" src="./images/elips12.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">সালাম সালাম হাজার সালাম...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">ফজলে খুদা</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-13 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song13">
+                                    <div class="col-3 p-0">
+                                        <img id="elips13" class="elips border rounded-5" height="40" width="40" src="./images/elips13.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">জয় বাংলা বাংলার জয়...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">মাজহারুল আনোয়ার</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-14 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song14">
+                                    <div class="col-3 p-0">
+                                        <img id="elips14" class="elips border rounded-5" height="40" width="40" src="./images/elips14.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">খাঁচার ভিতর অচিন পাখি...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">লালন শাহ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Third line of audio picker -->
+                            <div class="col-4">
+                                <!-- audio picker-15 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song15">
+                                    <div class="col-3 p-0">
+                                        <img id="elips15" class="elips border rounded-5" height="40" width="40" src="./images/elips15.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">একবার যেতে দে না...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">গাজী মাজহারুল আনোয়ার</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-16 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song16">
+                                    <div class="col-3 p-0">
+                                        <img id="elips16" class="elips border rounded-5" height="40" width="40" src="./images/elips16.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">কারার ওই লৌহকপাট...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">কাজী নজরুল ইসলাম</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-17 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song17">
+                                    <div class="col-3 p-0">
+                                        <img id="elips17" class="elips border rounded-5" height="40" width="40" src="./images/elips17.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">ধন এই পদ্মা এই মেঘনা...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">আবু জাফর</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-18 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song18">
+                                    <div class="col-3 p-0">
+                                        <img id="elips18" class="elips border rounded-5" height="40" width="40" src="./images/elips18.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">চল্‌ চল্‌ চল্‌ ঊর্ধ গগণে...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">কাজী নজরুল ইসলাম</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-19 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song19">
+                                    <div class="col-3 p-0">
+                                        <img id="elips19" class="elips border rounded-5" height="40" width="40" src="./images/elips19.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">এক একতারা তুই দেশের কথা...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">গাজী মাজহারুল আনোয়ার</p>
+                                    </div>
+                                </div>
+                                <!-- audio picker-20 -->
+                                <div class="row border border-end-0 bg-grad d-flex flex-row justify-content-center p-1 pointer mb-1" id="song20">
+                                    <div class="col-3 p-0">
+                                        <img id="elips20" class="elips border rounded-5" height="40" width="40" src="./images/elips20.svg" alt="">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <p class="fs-custome ff-shiliguri fw-bolder text-warning mb-0">এক তুমি কি দেখেছ কভু...</p>
+                                        <p class="fs-custome ff-shiliguri text-light mb-0">মুহম্মদ আবদুল জব্বার</p>
+                                    </div>
+                                </div>
+                                <div class="row pt-2 m-auto">
+                                    <div class="col-12">
+                                        <button title="stop-btn" class="btn btn-outline-danger rounded-0 w-100"><i class="fa-solid fa-circle-stop" id="stop"></i> Stop</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-9 p-0">
-                            <h6 class="ff-manrope fw-bolder text-light">Amar Vaiyer Rokte...</h6>
-                            <p class="ff-manrope name text-light mb-0">by Abdul Gaffar Choudhury</p>
+                    </div>
+                    <div class="col-5 d-flex flex-column justify-content-center pt-5" id="disk-sec">
+                        <div class="m-auto d-flex flex-column justify-content-center">
+                            <img
+                                id="img"
+                                height="350px"
+                                width="350px"
+                                class=""
+                                src="./images/disk0.svg"
+                                alt="">
+                            <div class="text-light m-auto mt-4 opacity-50">
+                                <audio id="song" controls="controls" autoplay="autoplay" src="">Your browser does not support the audio format.</audio>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-8 d-flex flex-column justify-content-center pt-5">
-                    <div class="m-auto d-flex flex-column justify-content-center">
-                        <img id="img" height="350px" width="350px" class="" src="./images/disk.svg" alt="">
-                        <div class="text-light m-auto mt-4 opacity-50"><audio id="song" controls autoplay src="">Your browser does not support the audio format.</audio></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="./js/music.js"></script>
-</body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <script src="./js/music.js"></script>
+    </body>
 </html>
