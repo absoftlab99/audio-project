@@ -23,6 +23,9 @@ to { transform: rotate(360deg); }
 .bg-grad{
     background: linear-gradient(90deg, rgba(81, 147, 150, 0.704) 0%, rgba(25,0,255,0) 100%);
 }
+.bg-grads{
+    background: linear-gradient(90deg, rgba(81, 147, 150, 0.704) 0%, rgba(25,0,255,0) 100%);
+}
 .pointer{
     cursor: pointer;
 }
