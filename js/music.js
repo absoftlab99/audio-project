@@ -13,7 +13,13 @@ function fullcall(id, disksrc, songsrc){
         disk.classList.add('img');
         disk.src = disksrc;
 
+        const btns = document.querySelectorAll('.pointer');
+        for(btn of btns){
+            const button = btn.classList;
+            button.remove('bg-custome');
+        }
         const songs = document.getElementById(id);
+        songs.classList.add('bg-grad');
         songs.classList.add('bg-custome');
 
         const song = document.getElementById('song');
